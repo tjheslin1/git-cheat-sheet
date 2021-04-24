@@ -8,6 +8,17 @@ No more git commit -am
 - [git-katas](https://github.com/eficode-academy/git-katas)
 
 ```sh
+git fetch --prune
+```
+
+Before fetching, remove any remote-tracking references that no longer exist on the remote.
+Local branches still need deleting.
+
+```sh
+git branch -d <branch-name>
+```
+
+```sh
 git add --patch
 ```
 
