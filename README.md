@@ -30,7 +30,7 @@ git reset <sha>
 ```
 
 Move all changes from any commit after the id you've given it back to the _Working Directory_.
-Adding `--hard` will *delete* the contents of the _Working Directory_ and _Staging Index_.
+Adding `--hard` will **delete** the contents of the _Working Directory_ and _Staging Index_.
 Lost work is only recoverable from the ref log.
 
 ```sh
@@ -49,5 +49,5 @@ git rebase
         master                             master
 ```
 
-Rewrites history. Only do this on *local unpublished branches*.
+Rewrites history. Only do this on **local unpublished branches**.
 "Rebasing" is changing the base of your branch from one commit to another, making it look as if you had created a branch from a different commit.
