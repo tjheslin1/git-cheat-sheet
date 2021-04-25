@@ -15,6 +15,13 @@ Before fetching, remove any remote-tracking references that no longer exist on t
 Local branches still need deleting.
 
 ```sh
+git show <sha>
+```
+
+Shows the changes in a commit (other objects can be 'shown').
+Useful for reviewing the changes made in a _revert_ commit.
+
+```sh
 git branch -d <branch-name>
 ```
 
