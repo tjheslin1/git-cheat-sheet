@@ -8,6 +8,12 @@ No more git commit -am
 - [git-katas](https://github.com/eficode-academy/git-katas)
 
 ```sh
+git log -p
+```
+
+Show the log with _"patch text"_. Shows the changes in the commits like `git show <sha>`.
+
+```sh
 git fetch --prune
 ```
 
