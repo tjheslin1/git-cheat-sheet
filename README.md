@@ -49,6 +49,8 @@ Calling `git reset` wih no additional arguments moves any changes on the _Stagin
 Nothing happens to the commit history.
 `git reset` is the opposite of `git add`.
 
+`git reset --soft <sha>` moves the HEAD to the specified commit. Preserving current changes.
+
 ```sh
 git reset <sha>
 ```
