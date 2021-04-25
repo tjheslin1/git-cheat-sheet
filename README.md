@@ -83,3 +83,9 @@ git rebase
 
 Rewrites history. Only do this on **local unpublished branches**.
 "Rebasing" is changing the base of your branch from one commit to another, making it look as if you had created a branch from a different commit.
+
+```sh
+git cherry-pick <sha>
+```
+
+Apply the change of the specific commit on the top of this branch. Requires the _Working Tree_ to be clean.
