@@ -45,6 +45,12 @@ Adding `--hard` will **delete** the contents of the _Working Directory_ and _Sta
 Lost work is only recoverable from the ref log.
 
 ```sh
+git revert <sha>
+```
+
+Create a new commit which reverts the changes made in the <sha> commit.
+
+```sh
 git rebase
 ```
 
