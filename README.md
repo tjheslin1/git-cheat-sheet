@@ -45,7 +45,9 @@ Completely replace the last commit with a new one and it will commit everything 
 git reset
 ```
 
-Calling `git reset` wih no additional arguments moves any changes on the _Staging Index_ back to the _Working Directory_.
+Calling `git reset` with no additional arguments moves any changes on the _Staging Index_ back to the _Working Directory_.
+
+`git reset -p` behaves the same as `git add -p` allowing you to choose hunks to reset back to the _Working Directory_.
 Nothing happens to the commit history.
 `git reset` is the opposite of `git add`.
 
