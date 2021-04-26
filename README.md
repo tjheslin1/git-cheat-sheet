@@ -1,5 +1,5 @@
 # git-cheat-sheet
-No more git commit -am
+No more `git commit -am`
 
 ## Resources
 - [Getting more with Git / Alice Bartlett / ffconf 2019](https://www.youtube.com/watch?v=FQ4IdcrOUz0)
