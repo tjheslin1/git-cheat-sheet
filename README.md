@@ -112,3 +112,21 @@ git cherry-pick <sha>
 ```
 
 Apply the change of the specific commit on the top of this branch. Requires the _Working Tree_ to be clean.
+
+---
+
+```sh
+git reflog
+```
+
+As you’re working, Git silently records what your HEAD is every time you change it.
+Each time you commit or change branches, the reflog is updated.
+
+`git log -g` will give the normal log output but for `reflog`.
+
+A good way to recover work is to create a branch at the commit you want to recover.
+
+```sh
+git branch recover-branch <sha-to-recover>
+```
+
