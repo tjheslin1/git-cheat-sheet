@@ -130,3 +130,25 @@ A good way to recover work is to create a branch at the commit you want to recov
 git branch recover-branch <sha-to-recover>
 ```
 
+---
+
+```sh
+git clean
+```
+
+Remove untracked files from the working tree.
+
+`-n` for dry run.
+`-f` to force. Required for default git settings.
+`-d` to clear directories.
+
+---
+
+```sh
+git push origin {A}:{B}
+```
+
+Push the state of of branch A to branch B. Useful for updating a deploy branch.
+
+e.g: `git push origin main:dev`
+
