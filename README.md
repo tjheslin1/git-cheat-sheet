@@ -57,6 +57,14 @@ Completely replace the last commit with a new one and it will commit everything 
 ---
 
 ```sh
+git checkout -p
+```
+
+Interactively step through changes in the _Working Directory_ to discard.
+
+---
+
+```sh
 git reset
 ```
 
