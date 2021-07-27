@@ -43,8 +43,9 @@ git branch -d <branch-name>
 ---
 
 ```sh
-git add --patch
+git add -p
 ```
+Interactively step through changes in the _Working Directory_ to add to the _Staging Index_.
 
 ---
 
