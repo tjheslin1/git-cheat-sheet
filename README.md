@@ -19,6 +19,14 @@ Show the log with _"patch text"_. Shows the changes in the commits like `git sho
 ---
 
 ```sh
+git diff --cached
+```
+
+Show changes on the _Staging Index_.
+
+---
+
+```sh
 git fetch --prune
 ```
 
