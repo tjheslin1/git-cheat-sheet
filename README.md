@@ -71,6 +71,14 @@ git checkout -p
 
 Interactively step through changes in the _Working Directory_ to discard.
 
+```sh
+git checkout {branch} -- {path/to/file}
+```
+
+Checkout the specified file from the specified branch.
+
+_Useful for when you want to separate changes in a branch._
+
 ---
 
 ```sh
