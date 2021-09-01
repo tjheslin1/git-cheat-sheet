@@ -25,16 +25,16 @@ git diff --cached
 Show changes on the _Staging Index_.
 
 ```sh
-git diff {branch-A} {branch-B}
+git diff <sha>/{branch-A} <sha>/{branch-B}
 ```
 
-Show changes between branch-A and branch-B.
+Show changes between branch-A and branch-B. Also works with <sha>'s.
 
 ```sh
-git diff {branch-A} {branch-B} -- {file}
+git diff <sha>/{branch-A} <sha>/{branch-B} -- {file}
 ```
 
-Show changes of a specific file between branch-A and branch-B.
+Show changes of a specific file between branch-A and branch-B. Also works with <sha>'s.
 
 ---
 
