@@ -200,3 +200,5 @@ git reset --soft <commit>
 
 Reset the HEAD to the <commit> (e.g `HEAD~1`).
 _This leaves all your changed files "Changes to be committed", as **git status** would put it._
+
+For multiple commits to the wrong branch, see [_Mitali Cyrus_'s  answer (not the accepted answer) to this StackOverflow Question](https://stackoverflow.com/questions/2941517/how-to-fix-committing-to-the-wrong-git-branch).
