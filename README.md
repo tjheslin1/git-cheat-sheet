@@ -190,7 +190,7 @@ Push the state of of branch A to branch B. Useful for updating a deploy branch.
 e.g: `git push origin main:dev`
 
 
-### Troubleshooting
+# Troubleshooting
 
 ## I've pushed to the wrong branch; I haven't commited yet
 
