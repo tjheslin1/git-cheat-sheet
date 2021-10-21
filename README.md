@@ -189,3 +189,14 @@ Push the state of of branch A to branch B. Useful for updating a deploy branch.
 
 e.g: `git push origin main:dev`
 
+
+### Troubleshooting
+
+## I've pushed to the wrong branch; I haven't commited yet
+
+```sh
+git reset --soft <commit>
+```
+
+Reset the HEAD to the <commit> (e.g `HEAD~1`).
+_This leaves all your changed files "Changes to be committed", as **git status** would put it._
