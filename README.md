@@ -145,10 +145,11 @@ Rewrites history. Only do this on **local unpublished branches**.
 At the start of the rebase the current branch (and HEAD) will be moved (reset) to the commit being rebased on to.
 Each commit of the branch being rewritten will then be applied.
 
-It is possbile for each commit on the branch being rebased (e.g `feature`) to have a conflict with the base branch (`master`)
+It is possbile for each commit on the branch being rebased (e.g `feature`) to have conflicts with the base branch (`master`)
 if the commits make conflicting changes with what has been changed on the branch branch (`master`) since (`m2` through `m5`).
 
 In the above example, the `feature` will be reset to `master` (`m5`) and `f1` through `f4`, in turn, will be applied.
+
 ---
 
 ```sh
