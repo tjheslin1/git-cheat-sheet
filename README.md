@@ -128,20 +128,27 @@ git rebase <branch>
 ```
 
 ```
-     feature branch                             feature branch                                 feature branch
-          |                                          |                                              |
-          v                                          v                                              v
-    *-*-*-*       after `rebase`               *-*-*-*           afer `merge`                 *-*-*-*
-   /              ------------->              /                  ----------->                /      ^
---*-*-*-*-*                        --*-*-*-*-*                                    --*-*-*-*-*       |
-          ^                                  ^                                                    master
-          |                                  |
-        master                             master
+        feature branch                                     feature branch
+             |                                                  |
+             v                                                  v
+    f1-f2-f3-f4       after `rebase`                   f1-f2-f3-f4
+   /                  ------------->                  /
+--m1-m2-m3-m4-m5                      --m1-m2-m3-m4-m5
+              ^                                     ^
+              |                                     |
+            master                                master
 ```
 
 Rewrites history. Only do this on **local unpublished branches**.
 "Rebasing" is changing the base of your branch from one commit to another, making it look as if you had created a branch from a different commit.
 
+At the start of the rebase the current branch (and HEAD) will be moved (reset) to the commit being rebased on to.
+Each commit of the branch being rewritten will then be applied.
+
+It is possbile for each commit on the branch being rebased (e.g `feature`) to have a conflict with the base branch (`master`)
+if the commits make conflicting changes with what has been changed on the branch branch (`master`) since (`m2` through `m5`).
+
+In the above example, the `feature` will be reset to `master` (`m5`) and `f1` through `f4`, in turn, will be applied.
 ---
 
 ```sh
