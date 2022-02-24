@@ -124,7 +124,7 @@ Create a new commit which reverts the changes made in the <sha> commit.
 ---
 
 ```sh
-git rebase
+git rebase <branch>
 ```
 
 ```
