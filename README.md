@@ -87,9 +87,15 @@ Interactively step through changes in the _Working Directory_ to discard.
 git checkout {branch} -- {path/to/file}
 ```
 
-Checkout the specified file from the specified branch.
+Checkout `{path/to/file}` from `{branch}`.
 
 _Useful for when you want to separate changes in a branch._
+
+```sh
+git checkout -p {branch} -- {path/to/file}
+```
+
+A combination of the last two; interactively step through changes to apply to the _Working Directory_ based on `{path/to/file}` from `{branch}`.
 
 ---
 
