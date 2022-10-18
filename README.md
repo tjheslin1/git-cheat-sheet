@@ -206,7 +206,7 @@ e.g: `git push origin main:dev`
 
 # Troubleshooting
 
-## I've pushed to the wrong branch; I haven't commited yet
+## I've pushed to the wrong branch; I haven't pushed yet
 
 ```sh
 git reset --soft <commit>
