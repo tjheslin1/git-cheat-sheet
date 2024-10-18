@@ -4,11 +4,19 @@ No more `git commit -am`
 ## Resources
 - [Git Book](https://git-scm.com/book)
 - [Getting more with Git / Alice Bartlett / ffconf 2019](https://www.youtube.com/watch?v=FQ4IdcrOUz0)
+- [ So You Think You Know Git - FOSDEM 2024 ](https://www.youtube.com/watch?v=aolI_Rz0ZqY)
 
 ## Katas
 - [git-katas](https://github.com/eficode-academy/git-katas)
 
----
+## Config
+
+REuse REcorded REsolution; or, tell git to remember how merge conflicts are resolved so it can automatically reapply them.
+```sh
+git config --global rerere.enabled true
+```
+
+## Commands
 
 ```sh
 git log -p
