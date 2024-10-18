@@ -211,6 +211,14 @@ Push the state of of branch A to branch B. Useful for updating a deploy branch.
 
 e.g: `git push origin main:dev`
 
+---
+
+```sh
+git push --force-with-lease
+```
+
+A "safe" force push, which errors if the remote ref has changed (i.e. if someone else has committed to the branch
+and you haven't updated, before pushing).
 
 # Troubleshooting
 
